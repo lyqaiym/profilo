@@ -18,7 +18,7 @@
 
 #include <fb/log.h>
 #include <fbjni/fbjni.h>
-#include <profilo/profiler/JavaBaseTracer.h>
+#include <profiler/JavaBaseTracer.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
@@ -32,8 +32,8 @@
 
 #include <time.h>
 
-#include <profilo/profiler/SignalHandler.h>
-#include <profilo/util/common.h>
+#include <profiler/SignalHandler.h>
+#include <util/common.h>
 
 namespace fbjni = facebook::jni;
 

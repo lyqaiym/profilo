@@ -23,8 +23,8 @@
 #include <system_error>
 
 #include <fb/log.h>
-#include <profilo/logger/buffer/RingBuffer.h>
-#include <profilo/mmapbuf/header/MmapBufferHeader.h>
+#include <logger/buffer/RingBuffer.h>
+#include <mmapbuf/header/MmapBufferHeader.h>
 
 namespace facebook {
 namespace profilo {

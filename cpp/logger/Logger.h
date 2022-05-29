@@ -16,9 +16,9 @@
 
 #pragma once
 
-#include <profilo/LogEntry.h>
-#include <profilo/entries/Entry.h>
-#include <profilo/entries/EntryType.h>
+#include <LogEntry.h>
+#include <generated/Entry.h>
+#include <generated/EntryType.h>
 #include <atomic>
 
 #include "PacketLogger.h"

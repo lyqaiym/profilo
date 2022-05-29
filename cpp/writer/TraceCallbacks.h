@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include <profilo/writer/AbortReason.h>
+#include <writer/AbortReason.h>
 
 namespace facebook {
 namespace profilo {

@@ -16,8 +16,8 @@
 
 #include "trace_backwards.h"
 
-#include <profilo/entries/EntryParser.h>
-#include <profilo/writer/PacketReassembler.h>
+#include <generated/EntryParser.h>
+#include <writer/PacketReassembler.h>
 
 namespace facebook {
 namespace profilo {

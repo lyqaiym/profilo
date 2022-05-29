@@ -17,7 +17,7 @@
 #pragma once
 
 #include <fbjni/fbjni.h>
-#include <profilo/writer/TraceWriter.h>
+#include <writer/TraceWriter.h>
 
 namespace fbjni = facebook::jni;
 

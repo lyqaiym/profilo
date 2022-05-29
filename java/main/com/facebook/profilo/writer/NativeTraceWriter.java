@@ -22,6 +22,7 @@ import javax.annotation.Nullable;
 @DoNotStrip
 public final class NativeTraceWriter {
   static {
+    SoLoader.loadLibrary("fbjni");
     SoLoader.loadLibrary("profilo");
   }
 

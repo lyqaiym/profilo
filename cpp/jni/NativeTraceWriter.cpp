@@ -16,8 +16,8 @@
 
 #include "NativeTraceWriter.h"
 
-#include <profilo/writer/trace_backwards.h>
-#include <profilo/writer/trace_headers.h>
+#include <writer/trace_backwards.h>
+#include <writer/trace_headers.h>
 #include <sys/types.h>
 #include <unistd.h>
 

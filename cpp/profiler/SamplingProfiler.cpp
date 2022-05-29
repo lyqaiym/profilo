@@ -34,16 +34,16 @@
 #include <fb/log.h>
 #include <fbjni/fbjni.h>
 
-#include <profilo/ExternalApi.h>
-#include <profilo/profiler/ExternalTracer.h>
-#include <profilo/profiler/JavaBaseTracer.h>
-#include <profilo/profiler/Retcode.h>
-#include <profilo/profiler/ThreadTimer.h>
+#include <api/ExternalApi.h>
+#include <ExternalTracer.h>
+#include <JavaBaseTracer.h>
+#include <Retcode.h>
+#include <ThreadTimer.h>
 
-#include <profilo/LogEntry.h>
-#include <profilo/TraceProviders.h>
+#include <LogEntry.h>
+#include <TraceProviders.h>
 
-#include <profilo/util/common.h>
+#include <util/common.h>
 
 using namespace facebook::jni;
 

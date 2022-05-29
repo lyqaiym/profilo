@@ -9,8 +9,8 @@
 #include <stdexcept>
 #include <ostream>
 
-#include <profilo/entries/EntryType.h>
-#include <profilo/entries/Entry.h>
+#include <generated/EntryType.h>
+#include <generated/Entry.h>
 
 namespace facebook {
 namespace profilo {

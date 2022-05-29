@@ -16,14 +16,14 @@
 
 #pragma once
 
-#include <fb/xplat_init.h>
+#include <xplat_init/xplat_init.h>
 #include <fbjni/fbjni.h>
 #include <jni.h>
 #include <pthread.h>
 
 #include <linker/locks.h>
-#include <profilo/mmapbuf/Buffer.h>
-#include <profilo/mmapbuf/JBuffer.h>
+#include <mmapbuf/Buffer.h>
+#include <mmapbuf/JBuffer.h>
 #include <functional>
 #include <memory>
 #include <string>

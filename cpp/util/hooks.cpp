@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <profilo/util/hooks.h>
+#include <util/hooks.h>
 
 #include <dlfcn.h>
 #include <stdexcept>

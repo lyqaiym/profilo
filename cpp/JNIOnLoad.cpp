@@ -15,7 +15,7 @@
  */
 
 #include <fb/ALog.h>
-#include <fb/xplat_init.h>
+#include <xplat_init/xplat_init.h>
 #include <fbjni/detail/utf8.h>
 #include <fbjni/fbjni.h>
 #include <jni.h>
@@ -23,13 +23,13 @@
 #include <cstring>
 #include <vector>
 
-#include <profilo/JNILoggerHelpers.h>
-#include <profilo/Logger.h>
-#include <profilo/jni/JMultiBufferLogger.h>
-#include <profilo/jni/NativeTraceWriter.h>
-#include <profilo/logger/buffer/RingBuffer.h>
-#include <profilo/mmapbuf/JBuffer.h>
-#include <profilo/util/common.h>
+#include <JNILoggerHelpers.h>
+#include <logger/Logger.h>
+#include <jni/JMultiBufferLogger.h>
+#include <jni/NativeTraceWriter.h>
+#include <logger/buffer/RingBuffer.h>
+#include <mmapbuf/JBuffer.h>
+#include <util/common.h>
 #include "TraceProviders.h"
 
 namespace fbjni = facebook::jni;
@@ -74,7 +74,7 @@ static void refreshProviderNames(
 
 using namespace facebook;
 
-JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void*) {
+JNIEXPORT jint JNI_OnLoad2(JavaVM* vm, void*) {
   return xplat::initialize(vm, [] {
     fbjni::registerNatives(
         "com/facebook/profilo/core/TraceEvents",

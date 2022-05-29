@@ -20,8 +20,8 @@
 #include <unistd.h>
 #include <stdexcept>
 
-#include "profilo/LogEntry.h"
-#include "profilo/logger/buffer/RingBuffer.h"
+#include "LogEntry.h"
+#include "logger/buffer/RingBuffer.h"
 
 #include "DalvikUtils.h"
 

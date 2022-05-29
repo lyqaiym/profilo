@@ -19,7 +19,7 @@
 #include <vector>
 
 #include <fb/log.h>
-#include <fb/xplat_init.h>
+#include <xplat_init/xplat_init.h>
 #include <fbjni/fbjni.h>
 #include <jni.h>
 #include <profilo/LogEntry.h>

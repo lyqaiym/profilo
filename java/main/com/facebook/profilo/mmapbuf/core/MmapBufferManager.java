@@ -27,6 +27,7 @@ public class MmapBufferManager {
 
   static {
     SoLoader.loadLibrary("profilo_mmapbuf");
+//    SoLoader.loadLibrary("profilo");
   }
 
   @DoNotStrip private final HybridData mHybridData;

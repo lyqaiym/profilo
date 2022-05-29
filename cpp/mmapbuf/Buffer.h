@@ -19,9 +19,9 @@
 #include <string>
 #include <type_traits>
 
-#include <profilo/Logger.h>
-#include <profilo/logger/buffer/TraceBuffer.h>
-#include <profilo/mmapbuf/header/MmapBufferHeader.h>
+#include <logger/Logger.h>
+#include <logger/buffer/TraceBuffer.h>
+#include <mmapbuf/header/MmapBufferHeader.h>
 
 namespace facebook {
 namespace profilo {

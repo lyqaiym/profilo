@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include <profilo/logger/buffer/Packet.h>
+#include <logger/buffer/Packet.h>
 
 #include <functional>
 #include <list>

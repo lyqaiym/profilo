@@ -4,7 +4,7 @@
 #include <cstring>
 #include <type_traits>
 #include <unistd.h>
-#include <profilo/entries/EntryType.h>
+#include <generated/EntryType.h>
 
 #pragma once
 

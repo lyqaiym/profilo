@@ -17,7 +17,7 @@
 #include <cassert>
 #include <cstring>
 
-#include <profilo/writer/TimestampTruncatingVisitor.h>
+#include <writer/TimestampTruncatingVisitor.h>
 
 namespace facebook {
 namespace profilo {

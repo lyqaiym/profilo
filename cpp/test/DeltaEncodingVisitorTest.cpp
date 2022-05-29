@@ -19,9 +19,9 @@
 
 #include <gtest/gtest.h>
 
-#include <profilo/entries/EntryParser.h>
-#include <profilo/writer/DeltaEncodingVisitor.h>
-#include <profilo/writer/PrintEntryVisitor.h>
+#include <generated/EntryParser.h>
+#include <writer/DeltaEncodingVisitor.h>
+#include <writer/PrintEntryVisitor.h>
 
 using namespace facebook::profilo::entries;
 using namespace facebook::profilo::writer;

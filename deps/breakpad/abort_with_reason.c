@@ -19,6 +19,6 @@
 #include <stdlib.h>
 
 void abortWithReasonImpl(const char* reason) {
-  FBLOGE(reason);
+  FBLOGE("%s",reason);
   abort();
 }

@@ -33,7 +33,7 @@
 #include <profilo/profiler/ThreadTimer.h>
 #include <profilo/test/TestSequencer.h>
 #include <profilo/util/common.h>
-#include "../logger/MultiBufferLogger.h"
+#include "logger/MultiBufferLogger.h"
 
 namespace facebook {
 namespace profilo {

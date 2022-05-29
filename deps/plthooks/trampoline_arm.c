@@ -22,7 +22,7 @@ void trampoline_template() {
   // the actual thread stack at all in order to make sure the hook function sees exactly
   // the parameters it's supposed to.
   // We intentionally clobber ip, it's an inter-procedure scratch register anyway.
-  asm(
+  __asm__(
     "push  { r0 - r3 };" // AAPCS doesn't require preservation of r0 - r3 across calls, so save em temporarily
     "ldr   r0, .L_hook_id;" // store hook id
     "mov   r1, lr;" // save lr so we know where to go back to once this is all done

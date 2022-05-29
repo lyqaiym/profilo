@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include <fb/xplat_init.h>
+#include <xplat_init/xplat_init.h>
 #include <fbjni/fbjni.h>
 #include <jni.h>
 

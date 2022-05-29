@@ -13,7 +13,7 @@
 #include <fstream>
 #include <sstream>
 #include <zlib.h>
-#include <zstr/strict_fstream.hpp>
+#include <zstr/src/strict_fstream.hpp>
 
 namespace zstr
 {

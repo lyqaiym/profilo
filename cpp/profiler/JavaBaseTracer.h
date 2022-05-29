@@ -19,7 +19,7 @@
 #include <string.h>
 #include <set>
 #include <string>
-#include "profilo/profiler/BaseTracer.h"
+#include "profiler/BaseTracer.h"
 
 namespace facebook {
 namespace profilo {

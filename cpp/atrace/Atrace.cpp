@@ -29,7 +29,7 @@
 
 #include <fb/Build.h>
 #include <fb/log.h>
-#include <fb/xplat_init.h>
+#include <xplat_init/xplat_init.h>
 #include <fbjni/fbjni.h>
 #include <linker/sharedlibs.h>
 #include <plthooks/plthooks.h>

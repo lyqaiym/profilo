@@ -15,7 +15,7 @@
  */
 
 #include <fmt/format.h>
-#include <profilo/writer/PrintEntryVisitor.h>
+#include <writer/PrintEntryVisitor.h>
 
 namespace facebook {
 namespace profilo {

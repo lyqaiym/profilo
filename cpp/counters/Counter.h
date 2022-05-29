@@ -17,7 +17,7 @@
 #pragma once
 
 #include <profilo/LogEntry.h>
-#include <profilo/MultiBufferLogger.h>
+#include <logger/MultiBufferLogger.h>
 #include <sys/types.h>
 #include <stdexcept>
 

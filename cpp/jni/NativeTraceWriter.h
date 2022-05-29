@@ -18,10 +18,10 @@
 
 #include <fbjni/fbjni.h>
 
-#include <profilo/jni/NativeTraceWriterCallbacks.h>
-#include <profilo/mmapbuf/Buffer.h>
-#include <profilo/mmapbuf/JBuffer.h>
-#include <profilo/writer/TraceWriter.h>
+#include <jni/NativeTraceWriterCallbacks.h>
+#include <mmapbuf/Buffer.h>
+#include <mmapbuf/JBuffer.h>
+#include <writer/TraceWriter.h>
 
 namespace fbjni = facebook::jni;
 namespace facebook {

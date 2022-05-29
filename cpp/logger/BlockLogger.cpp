@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#include <profilo/logger/BlockLogger.h>
-#include <profilo/util/common.h>
+#include <logger/BlockLogger.h>
+#include <util/common.h>
 
 namespace facebook {
 namespace profilo {

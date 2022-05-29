@@ -35,6 +35,7 @@
 #include <sigmux.h>
 
 #define PAGE_ALIGN(ptr, pagesize) (void*) (((uintptr_t) (ptr)) & ~((pagesize) - 1))
+#define LOG_TAG "plthooks_cpp"
 
 using namespace facebook::linker;
 using namespace facebook::plthooks;

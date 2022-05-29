@@ -30,7 +30,7 @@ public class CPUProfiler {
   private static volatile int sAvailableTracers = 0;
 
   static {
-    SoLoader.loadLibrary("profilo_stacktrace");
+    SoLoader.loadLibrary("profilo");
   }
 
   /* Keep in sync with BaseTracer in C++ */

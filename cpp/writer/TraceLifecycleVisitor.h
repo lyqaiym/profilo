@@ -23,14 +23,14 @@
 #include <utility>
 #include <vector>
 
-#include <profilo/entries/Entry.h>
-#include <profilo/entries/EntryParser.h>
-#include <profilo/writer/AbortReason.h>
-#include <profilo/writer/ScopedThreadPriority.h>
-#include <profilo/writer/TraceCallbacks.h>
-#include <profilo/writer/TraceFileHelpers.h>
+#include <generated/Entry.h>
+#include <generated/EntryParser.h>
+#include <writer/AbortReason.h>
+#include <writer/ScopedThreadPriority.h>
+#include <writer/TraceCallbacks.h>
+#include <writer/TraceFileHelpers.h>
 
-#include <zstr/zstr.hpp>
+#include <zstr/src/zstr.hpp>
 
 namespace facebook {
 namespace profilo {

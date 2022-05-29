@@ -17,7 +17,7 @@
 #pragma once
 
 #include <fbjni/fbjni.h>
-#include <profilo/MultiBufferLogger.h>
+#include <logger/MultiBufferLogger.h>
 #include <profilo/counters/ProcFs.h>
 #include <profilo/jni/JMultiBufferLogger.h>
 

@@ -16,8 +16,8 @@
 
 #include "Retcode.h"
 
-#include <profilo/ExternalApi.h>
-#include <profilo/LogEntry.h>
+#include <api/ExternalApi.h>
+#include <LogEntry.h>
 
 namespace facebook {
 namespace profilo {

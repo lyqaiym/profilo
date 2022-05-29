@@ -16,8 +16,8 @@
 
 #pragma once
 
-#include <profilo/ExternalApi.h>
-#include <profilo/MultiBufferLogger.h>
+#include <api/ExternalApi.h>
+#include <logger/MultiBufferLogger.h>
 #include <ucontext.h>
 #include <unistd.h>
 

@@ -15,7 +15,7 @@
  */
 
 #include "JSTracer.h"
-#include "profilo/logger/buffer/RingBuffer.h"
+#include "logger/buffer/RingBuffer.h"
 
 namespace facebook {
 namespace profilo {

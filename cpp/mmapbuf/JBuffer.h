@@ -19,7 +19,7 @@
 #include <fbjni/fbjni.h>
 #include <jni.h>
 
-#include <profilo/mmapbuf/Buffer.h>
+#include <mmapbuf/Buffer.h>
 #include <memory>
 #include <string>
 

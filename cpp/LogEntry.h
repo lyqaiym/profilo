@@ -21,7 +21,7 @@
 #include <cstring>
 #include <type_traits>
 
-#include <profilo/entries/Entry.h>
+#include <generated/Entry.h>
 
 namespace facebook {
 namespace profilo {

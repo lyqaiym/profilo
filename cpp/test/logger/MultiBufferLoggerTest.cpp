@@ -20,7 +20,7 @@
 #include <vector>
 
 #include <gtest/gtest.h>
-#include <profilo/MultiBufferLogger.h>
+#include <logger/MultiBufferLogger.h>
 #include <profilo/mmapbuf/Buffer.h>
 
 namespace facebook {

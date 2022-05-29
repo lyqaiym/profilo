@@ -1,7 +1,7 @@
 // @generated SignedSource<<ddb15ac11ce4c74eb08b3ee312829017>>
 
 #include <stdexcept>
-#include <profilo/entries/EntryType.h>
+#include <generated/EntryType.h>
 
 namespace facebook {
 namespace profilo {

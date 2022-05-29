@@ -19,11 +19,11 @@
 
 #include <system_error>
 
-#include <profilo/writer/DeltaEncodingVisitor.h>
-#include <profilo/writer/PrintEntryVisitor.h>
-#include <profilo/writer/StackTraceInvertingVisitor.h>
-#include <profilo/writer/TimestampTruncatingVisitor.h>
-#include <profilo/writer/TraceLifecycleVisitor.h>
+#include <writer/DeltaEncodingVisitor.h>
+#include <writer/PrintEntryVisitor.h>
+#include <writer/StackTraceInvertingVisitor.h>
+#include <writer/TimestampTruncatingVisitor.h>
+#include <writer/TraceLifecycleVisitor.h>
 
 namespace facebook {
 namespace profilo {

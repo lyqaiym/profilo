@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include <profilo/entries/EntryParser.h>
+#include <generated/EntryParser.h>
 
 namespace facebook {
 namespace profilo {

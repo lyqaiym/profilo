@@ -16,8 +16,8 @@
 
 #pragma once
 
-#include <profilo/LogEntry.h>
-#include <profilo/MultiBufferLogger.h>
+#include <LogEntry.h>
+#include <logger/MultiBufferLogger.h>
 
 namespace facebook {
 namespace profilo {

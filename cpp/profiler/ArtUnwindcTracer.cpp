@@ -17,11 +17,11 @@
 #include <unistd.h>
 #include <atomic>
 
-#include "profilo/logger/buffer/RingBuffer.h"
-#include "profilo/profiler/ArtUnwindcTracer.h"
-#include "profilo/profiler/BaseTracer.h"
+#include "logger/buffer/RingBuffer.h"
+#include "profiler/ArtUnwindcTracer.h"
+#include "profiler/BaseTracer.h"
 
-#include "profilo/profiler/unwindc/runtime.h"
+#include "profiler/unwindc/runtime.h"
 
 namespace facebook {
 namespace profilo {
@@ -58,7 +58,7 @@ static constexpr ArtUnwindcVersion kVersion = kArtUnwindc900;
  * `using namespace`.
  */
 namespace ANDROID_NAMESPACE { // ANDROID_NAMESPACE is a preprocessor variable
-#include "profilo/profiler/unwindc/unwinder.h"
+#include "profiler/unwindc/android_500/arm/unwinder.h"
 } // namespace ANDROID_NAMESPACE
 
 using namespace ANDROID_NAMESPACE;

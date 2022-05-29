@@ -58,7 +58,7 @@ public final class StackFrameThread extends BaseTraceProvider {
   @Nullable private TraceContext mSavedTraceContext;
 
   public StackFrameThread(Context context) {
-    super("profilo_stacktrace");
+    super("profilo");
     Context applicationContext = context.getApplicationContext();
     if (applicationContext == null && context instanceof Application) {
       // When the context is passed in from com.facebook.katana.app.FacebookApplication

@@ -19,10 +19,10 @@
 
 #include <gtest/gtest.h>
 
-#include <profilo/entries/Entry.h>
-#include <profilo/entries/EntryParser.h>
-#include <profilo/entries/EntryType.h>
-#include <profilo/writer/PrintEntryVisitor.h>
+#include <generated/Entry.h>
+#include <generated/EntryParser.h>
+#include <entries/EntryType.h>
+#include <writer/PrintEntryVisitor.h>
 
 namespace facebook {
 namespace profilo {

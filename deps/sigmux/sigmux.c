@@ -33,7 +33,7 @@
 #endif
 
 #if USE_RT_SIGPROCMASK
-# include <linux_syscall_support.h>
+# include <lss/linux_syscall_support.h>
 #endif
 
 #define ARRAY_SIZE(a) ((sizeof ((a)) / (sizeof ((a)[0]))))

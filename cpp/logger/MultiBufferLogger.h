@@ -22,7 +22,7 @@
 #include <vector>
 
 #include <linker/locks.h>
-#include <profilo/mmapbuf/Buffer.h>
+#include <mmapbuf/Buffer.h>
 
 using namespace facebook::profilo::mmapbuf;
 

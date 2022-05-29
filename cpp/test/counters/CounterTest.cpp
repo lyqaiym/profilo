@@ -17,7 +17,7 @@
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
 
-#include <profilo/MultiBufferLogger.h>
+#include <logger/MultiBufferLogger.h>
 #include <profilo/counters/Counter.h>
 #include <vector>
 

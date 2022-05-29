@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-#include <profilo/LogEntry.h>
-#include <profilo/entries/Entry.h>
-#include <profilo/util/common.h>
+#include <LogEntry.h>
+#include <generated/Entry.h>
+#include <util/common.h>
 #include <cstdint>
 
 #ifdef __ANDROID__

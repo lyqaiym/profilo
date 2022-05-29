@@ -14,28 +14,29 @@
  * limitations under the License.
  */
 
-#include <fb/xplat_init.h>
+#include <xplat_init/xplat_init.h>
 #include <fbjni/fbjni.h>
 #include <jni.h>
 
-#include <profilo/jni/JMultiBufferLogger.h>
-#include <profilo/profiler/ArtCompatibility.h>
-#include <profilo/profiler/BaseTracer.h>
-#include <profilo/util/common.h>
+#include <jni/JMultiBufferLogger.h>
+#include <profiler/ArtCompatibility.h>
+#include <profiler/BaseTracer.h>
+#include <util/common.h>
 
-#include <profilo/profiler/ArtUnwindcTracer_500.h>
-#include <profilo/profiler/ArtUnwindcTracer_510.h>
-#include <profilo/profiler/ArtUnwindcTracer_600.h>
-#include <profilo/profiler/ArtUnwindcTracer_700.h>
-#include <profilo/profiler/ArtUnwindcTracer_710.h>
-#include <profilo/profiler/ArtUnwindcTracer_711.h>
-#include <profilo/profiler/ArtUnwindcTracer_712.h>
-#include <profilo/profiler/ArtUnwindcTracer_800.h>
-#include <profilo/profiler/ArtUnwindcTracer_810.h>
-#include <profilo/profiler/ArtUnwindcTracer_900.h>
-#include <profilo/profiler/DalvikTracer.h>
-#include <profilo/profiler/ExternalTracerManager.h>
-#include <profilo/profiler/JSTracer.h>
+//#include <profiler/ArtUnwindcTracer_500.h>
+//#include <profiler/ArtUnwindcTracer_510.h>
+//#include <profiler/ArtUnwindcTracer_600.h>
+//#include <profiler/ArtUnwindcTracer_700.h>
+//#include <profiler/ArtUnwindcTracer_710.h>
+//#include <profiler/ArtUnwindcTracer_711.h>
+//#include <profiler/ArtUnwindcTracer_712.h>
+//#include <profiler/ArtUnwindcTracer_800.h>
+//#include <profiler/ArtUnwindcTracer_810.h>
+//#include <profiler/ArtUnwindcTracer_900.h>
+#include "profiler/ArtUnwindcTracer.h"
+#include <profiler/DalvikTracer.h>
+#include <profiler/ExternalTracerManager.h>
+#include <profiler/JSTracer.h>
 
 #if HAS_NATIVE_TRACER
 #include <profilo/profiler/NativeTracer.h>
@@ -83,47 +84,47 @@ std::unordered_map<int32_t, std::shared_ptr<BaseTracer>> makeAvailableTracers(
   }
 #endif
 
-  if (available_tracers & tracers::ART_UNWINDC_5_0) {
-    tracers[tracers::ART_UNWINDC_5_0] = std::make_shared<ArtUnwindcTracer50>();
-  }
-
-  if (available_tracers & tracers::ART_UNWINDC_5_1) {
-    tracers[tracers::ART_UNWINDC_5_1] = std::make_shared<ArtUnwindcTracer51>();
-  }
-
-  if (available_tracers & tracers::ART_UNWINDC_6_0) {
-    tracers[tracers::ART_UNWINDC_6_0] = std::make_shared<ArtUnwindcTracer60>();
-  }
-
-  if (available_tracers & tracers::ART_UNWINDC_7_0_0) {
-    tracers[tracers::ART_UNWINDC_7_0_0] =
-        std::make_shared<ArtUnwindcTracer700>();
-  }
-
-  if (available_tracers & tracers::ART_UNWINDC_7_1_0) {
-    tracers[tracers::ART_UNWINDC_7_1_0] =
-        std::make_shared<ArtUnwindcTracer710>();
-  }
-
-  if (available_tracers & tracers::ART_UNWINDC_7_1_1) {
-    tracers[tracers::ART_UNWINDC_7_1_1] =
-        std::make_shared<ArtUnwindcTracer711>();
-  }
-
-  if (available_tracers & tracers::ART_UNWINDC_7_1_2) {
-    tracers[tracers::ART_UNWINDC_7_1_2] =
-        std::make_shared<ArtUnwindcTracer712>();
-  }
-
-  if (available_tracers & tracers::ART_UNWINDC_8_0_0) {
-    tracers[tracers::ART_UNWINDC_8_0_0] =
-        std::make_shared<ArtUnwindcTracer800>();
-  }
-
-  if (available_tracers & tracers::ART_UNWINDC_8_1_0) {
-    tracers[tracers::ART_UNWINDC_8_1_0] =
-        std::make_shared<ArtUnwindcTracer810>();
-  }
+//  if (available_tracers & tracers::ART_UNWINDC_5_0) {
+//    tracers[tracers::ART_UNWINDC_5_0] = std::make_shared<ArtUnwindcTracer50>();
+//  }
+//
+//  if (available_tracers & tracers::ART_UNWINDC_5_1) {
+//    tracers[tracers::ART_UNWINDC_5_1] = std::make_shared<ArtUnwindcTracer51>();
+//  }
+//
+//  if (available_tracers & tracers::ART_UNWINDC_6_0) {
+//    tracers[tracers::ART_UNWINDC_6_0] = std::make_shared<ArtUnwindcTracer60>();
+//  }
+//
+//  if (available_tracers & tracers::ART_UNWINDC_7_0_0) {
+//    tracers[tracers::ART_UNWINDC_7_0_0] =
+//        std::make_shared<ArtUnwindcTracer700>();
+//  }
+//
+//  if (available_tracers & tracers::ART_UNWINDC_7_1_0) {
+//    tracers[tracers::ART_UNWINDC_7_1_0] =
+//        std::make_shared<ArtUnwindcTracer710>();
+//  }
+//
+//  if (available_tracers & tracers::ART_UNWINDC_7_1_1) {
+//    tracers[tracers::ART_UNWINDC_7_1_1] =
+//        std::make_shared<ArtUnwindcTracer711>();
+//  }
+//
+//  if (available_tracers & tracers::ART_UNWINDC_7_1_2) {
+//    tracers[tracers::ART_UNWINDC_7_1_2] =
+//        std::make_shared<ArtUnwindcTracer712>();
+//  }
+//
+//  if (available_tracers & tracers::ART_UNWINDC_8_0_0) {
+//    tracers[tracers::ART_UNWINDC_8_0_0] =
+//        std::make_shared<ArtUnwindcTracer800>();
+//  }
+//
+//  if (available_tracers & tracers::ART_UNWINDC_8_1_0) {
+//    tracers[tracers::ART_UNWINDC_8_1_0] =
+//        std::make_shared<ArtUnwindcTracer810>();
+//  }
 
   if (available_tracers & tracers::ART_UNWINDC_9_0_0) {
     tracers[tracers::ART_UNWINDC_9_0_0] =
@@ -196,7 +197,10 @@ static void nativeRemoveFromWhitelist(fbjni::alias_ref<jobject>, jint tid) {
 }
 } // namespace
 
-JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void*) {
+extern jint JNI_OnLoad2(JavaVM* vm, void*);
+
+JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void* v) {
+  JNI_OnLoad2(vm,v);
   return facebook::xplat::initialize(vm, [] {
     fbjni::registerNatives(
         CPUProfilerType,

@@ -16,15 +16,15 @@
 #include <utility>
 #include <vector>
 
-#include <profilo/entries/Entry.h>
-#include <profilo/logger/buffer/RingBuffer.h>
-#include <profilo/mmapbuf/MmapBufferManager.h>
-#include <profilo/mmapbuf/header/MmapBufferHeader.h>
-#include <profilo/mmapbuf/writer/MmapBufferTraceWriter.h>
-#include <profilo/util/common.h>
-#include <profilo/writer/DeltaEncodingVisitor.h>
-#include <profilo/writer/PrintEntryVisitor.h>
-#include <profilo/writer/TimestampTruncatingVisitor.h>
+#include <generated/Entry.h>
+#include <logger/buffer/RingBuffer.h>
+#include <mmapbuf/MmapBufferManager.h>
+#include <mmapbuf/header/MmapBufferHeader.h>
+#include <mmapbuf/writer/MmapBufferTraceWriter.h>
+#include <util/common.h>
+#include <writer/DeltaEncodingVisitor.h>
+#include <writer/PrintEntryVisitor.h>
+#include <writer/TimestampTruncatingVisitor.h>
 
 using namespace facebook::profilo::logger;
 using namespace facebook::profilo::entries;

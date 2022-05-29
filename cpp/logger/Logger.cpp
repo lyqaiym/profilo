@@ -21,7 +21,7 @@
 #include <cstring>
 #include <stdexcept>
 
-#include <profilo/util/common.h>
+#include <util/common.h>
 
 namespace facebook {
 namespace profilo {

@@ -19,7 +19,7 @@ import com.facebook.soloader.SoLoader;
 
 public class StackTraceWhitelist {
   static {
-    SoLoader.loadLibrary("profilo_stacktrace");
+    SoLoader.loadLibrary("profilo");
   }
 
   public static void add(int threadId) {

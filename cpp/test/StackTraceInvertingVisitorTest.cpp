@@ -19,9 +19,9 @@
 
 #include <gtest/gtest.h>
 
-#include <profilo/entries/EntryParser.h>
-#include <profilo/writer/PrintEntryVisitor.h>
-#include <profilo/writer/StackTraceInvertingVisitor.h>
+#include <generated/EntryParser.h>
+#include <writer/PrintEntryVisitor.h>
+#include <writer/StackTraceInvertingVisitor.h>
 
 using namespace facebook::profilo::entries;
 using namespace facebook::profilo::writer;

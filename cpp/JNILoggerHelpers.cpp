@@ -15,11 +15,11 @@
  */
 
 #include "JNILoggerHelpers.h"
-#include <profilo/LogEntry.h>
-#include <profilo/Logger.h>
-#include <profilo/jni/NativeTraceWriter.h>
-#include <profilo/logger/buffer/RingBuffer.h>
-#include <profilo/mmapbuf/JBuffer.h>
+#include <LogEntry.h>
+#include <logger/Logger.h>
+#include <jni/NativeTraceWriter.h>
+#include <logger/buffer/RingBuffer.h>
+#include <mmapbuf/JBuffer.h>
 
 namespace facebook {
 namespace profilo {

@@ -16,8 +16,8 @@
 
 #pragma once
 
-#include <profilo/logger/buffer/TraceBuffer.h>
-#include <profilo/mmapbuf/Buffer.h>
+#include <logger/buffer/TraceBuffer.h>
+#include <mmapbuf/Buffer.h>
 
 #define PROFILOEXPORT __attribute__((visibility("default")))
 

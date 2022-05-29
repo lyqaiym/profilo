@@ -23,7 +23,7 @@
 #include <system_error>
 #include <vector>
 
-#include <profilo/util/common.h>
+#include <util/common.h>
 
 namespace facebook {
 namespace profilo {

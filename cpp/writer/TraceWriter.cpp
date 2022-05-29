@@ -25,17 +25,17 @@
 #include <system_error>
 #include <unordered_set>
 
-#include <profilo/entries/EntryParser.h>
-#include <profilo/writer/DeltaEncodingVisitor.h>
-#include <profilo/writer/PacketReassembler.h>
-#include <profilo/writer/PrintEntryVisitor.h>
-#include <profilo/writer/StackTraceInvertingVisitor.h>
-#include <profilo/writer/TimestampTruncatingVisitor.h>
-#include <profilo/writer/TraceLifecycleVisitor.h>
-#include <profilo/writer/TraceWriter.h>
-#include <profilo/writer/trace_backwards.h>
+#include <generated/EntryParser.h>
+#include <writer/DeltaEncodingVisitor.h>
+#include <writer/PacketReassembler.h>
+#include <writer/PrintEntryVisitor.h>
+#include <writer/StackTraceInvertingVisitor.h>
+#include <writer/TimestampTruncatingVisitor.h>
+#include <writer/TraceLifecycleVisitor.h>
+#include <writer/TraceWriter.h>
+#include <writer/trace_backwards.h>
 
-#include <profilo/LogEntry.h>
+#include <LogEntry.h>
 
 namespace facebook {
 namespace profilo {

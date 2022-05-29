@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-#include <profilo/entries/EntryParser.h>
-#include <profilo/logger/buffer/TraceBuffer.h>
+#include <generated/EntryParser.h>
+#include <logger/buffer/TraceBuffer.h>
 
 namespace facebook {
 namespace profilo {

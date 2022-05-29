@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include <dalvik-subset/internals.h>
+#include <dalvik/internals.h>
 
 namespace facebook {
 namespace profilo {

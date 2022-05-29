@@ -16,9 +16,9 @@
 
 #pragma once
 
-#include "profilo/profiler/BaseTracer.h"
+#include "profiler/BaseTracer.h"
 
-#include <profilo/ExternalApi.h>
+#include <api/ExternalApi.h>
 
 #include <assert.h>
 #include <unistd.h>

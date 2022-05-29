@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include <profilo/logger/lfrb/LockFreeRingBuffer.h>
+#include <logger/lfrb/LockFreeRingBuffer.h>
 
 namespace facebook {
 namespace profilo {

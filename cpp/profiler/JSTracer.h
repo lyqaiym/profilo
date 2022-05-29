@@ -16,9 +16,9 @@
 
 #pragma once
 
-#include <profilo/profiler/ExternalTracer.h>
+#include <profiler/ExternalTracer.h>
 
-#include <profilo/MultiBufferLogger.h>
+#include <logger/MultiBufferLogger.h>
 #include <unistd.h>
 #include <unordered_map>
 

@@ -22,7 +22,7 @@
 #include <system_error>
 
 #include <fb/log.h>
-#include <profilo/util/common.h>
+#include <util/common.h>
 
 namespace facebook {
 namespace profilo {

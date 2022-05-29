@@ -20,7 +20,7 @@
 #include <cstdlib>
 #include <limits>
 
-#include <profilo/logger/lfrb/Futex.h>
+#include <logger/lfrb/Futex.h>
 
 #ifndef DCHECK
 #define DCHECK(expr) \

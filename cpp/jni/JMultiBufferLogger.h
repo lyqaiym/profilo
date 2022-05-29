@@ -22,8 +22,8 @@
 #include <vector>
 
 #include <fbjni/fbjni.h>
-#include <profilo/MultiBufferLogger.h>
-#include <profilo/mmapbuf/JBuffer.h>
+#include <logger/MultiBufferLogger.h>
+#include <mmapbuf/JBuffer.h>
 
 namespace fbjni = facebook::jni;
 using namespace facebook::profilo::mmapbuf;

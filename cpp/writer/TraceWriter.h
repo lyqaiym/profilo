@@ -25,11 +25,11 @@
 #include <utility>
 #include <vector>
 
-#include <profilo/LogEntry.h>
-#include <profilo/entries/EntryParser.h>
-#include <profilo/mmapbuf/Buffer.h>
-#include <profilo/writer/PacketReassembler.h>
-#include <profilo/writer/TraceCallbacks.h>
+#include <LogEntry.h>
+#include <generated/EntryParser.h>
+#include <mmapbuf/Buffer.h>
+#include <writer/PacketReassembler.h>
+#include <writer/TraceCallbacks.h>
 
 namespace facebook {
 namespace profilo {

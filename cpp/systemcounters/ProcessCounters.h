@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include <profilo/MultiBufferLogger.h>
+#include <logger/MultiBufferLogger.h>
 #include <profilo/counters/Counter.h>
 #include <profilo/counters/ProcFs.h>
 #include <profilo/systemcounters/MappingAggregator.h>
