@@ -524,7 +524,7 @@ auto get_oat_pointer(
   return AdvancePointer(begin, (offset * 1U));
 }
 
-auto get_code_offset(struct OatMethod const& struct_OatMethod) {
+uintptr_t get_code_offset(struct OatMethod const& struct_OatMethod) {
   uintptr_t oat_method_offset = struct_OatMethod.offset_uintptr;
   auto code = get_oat_pointer(struct_OatMethod, oat_method_offset);
   code = (code & (~1U));
@@ -548,7 +548,7 @@ auto get_quick_code(struct OatMethod const& struct_OatMethod) {
   return quick_code;
 }
 
-auto get_oat_quick_method_header(
+uintptr_t get_oat_quick_method_header(
     uintptr_t method,
     uintptr_t runtime_obj,
     uintptr_t thread_obj,
